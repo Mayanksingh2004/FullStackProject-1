@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(../img/batman-darknight-k12.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+header {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding: 0 25px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+header .logo h2 {
+  color: white;
+  text-shadow: 2px 2px 2px gold;
+}
+header .logo img {
+  height: 60px;
+  margin-right: 15px;
+}
+.nav-bar {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+}
+.nav-bar li a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  transition: 0.4s;
+  padding: 24px;
+}
+.nav-bar li a:hover {
+  color: white;
+  border-bottom: 3px solid white;
+  box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.445);
+}
+.carousel {
+  z-index: -1;
+}
+footer {
+  line-height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+@media (max-width: 660px) {
+  .nav-bar {
+    display: none;
+  }
+  header {
+    justify-content: center;
+  }
+}
